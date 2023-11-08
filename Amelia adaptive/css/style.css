@@ -1,0 +1,470 @@
+@import url('reset.css');
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/Roboto-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.woff2') format('woff2');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Architects Daughter';
+    src: url('../fonts/ArchitectsDaughter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* Global */
+
+body {
+    font-family: 'Roboto';
+    font-weight: 400;
+    color: #161616;
+    line-height: 30px;
+    background: #D8D8D6;;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column;
+	height: 100%;
+}
+
+.hidden {
+    width: 0;
+    height: 0;
+    position: absolute;
+    z-index: -1;
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1, h2 {
+    font-family: 'Architects Daughter';
+}
+
+h2, h3, h4 {
+    text-align: center;
+}
+
+h3, h4 {
+    color: #161616;
+}
+
+h1 {
+    font-size: 62px;
+    line-height: 70px;
+    margin-bottom: 40px;
+}
+
+h2 {
+    margin-bottom: 50px;
+    color: #000;
+    font-family: 'Architects Daughter';
+    font-size: 32px;
+}
+
+h3 {
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 24px;
+    line-height: 39px; 
+    margin-bottom: 20px;
+}
+
+
+
+/* Header */
+
+.header {
+    padding: 25px 0;
+    background: #81A36B;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_list {
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_list > li a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-burger {
+	display: none;
+}
+
+
+
+/* Hero - Section 1 */
+
+.hero {
+    padding-bottom: 60px;
+}
+
+.flex_hero {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.hero_inner,
+.hero_image {
+    flex: 1 1 50%;
+}
+
+.hero_inner p {
+    margin-bottom: 20px;
+}
+
+.hero_buttons {
+    font-size: 0;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    font-size: 18px;
+    color: #161616;
+    border-radius: 6px;
+    background: #81A36B;
+    padding: 14px 34px;
+    cursor: pointer;
+    border: 1px solid #81A36B;
+    margin-left: 23px;
+}
+
+.btn:first-child {
+    margin-left: 0;
+}
+
+.btn_outline {
+    background: transparent;
+}
+
+.hero_image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+/* About - Section 2 */
+
+.about {
+    padding: 60px 0;
+    align-items: center;
+}
+
+.about p {
+    margin: 0 auto;
+    max-width: 570px;
+    text-align: center;
+}
+
+
+
+/* Features - Section 3 */
+
+.features {
+    padding: 78px 0;
+    background: #81A36B;
+    margin: 60px 0;
+} 
+
+.flex_features {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.flex_features > li {
+    text-align: center;
+}
+
+.flex_features svg {
+    margin-bottom: 25px;
+    max-width: 80px;
+    height: 80px;
+}
+
+.flex_features {
+    color: #161616;
+    font-family: 'Montserrat';
+    font-size: 18px;
+    font-weight: 500;
+}
+
+
+
+/* How we are working - Section 3 */
+
+.working {
+    padding: 60px 0;
+}
+
+.flex_working {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.working_inner,
+.working_image {
+    flex: 1 1 540px;
+}
+
+.working_image img {
+    object-fit: cover;
+}
+
+
+
+/* Our Works - Section 4 */
+
+.our_works {
+    padding: 60px 0;
+}
+
+.cards {
+    display: flex;
+    gap: 30px;
+}
+
+.card {
+    width: 350px;
+}
+
+.card > div {
+    border-radius: 6px;
+    background: #81A36B;
+    padding: 15px;
+}
+
+.card img {
+    display: block;
+    height: 155px;
+    margin-bottom: 23px;
+    border-radius: 6px;
+    width: 100%;
+    height: 402px;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+
+
+/* Footer - Section 5 */
+
+.footer {
+    padding: 50px 0;
+    background: #81A36B;
+    text-align: center;
+}
+
+.footer a {
+    display: flex;
+    flex-direction: column;
+    text-decoration: none;
+    color: inherit;
+}
+
+.footer > img {
+    margin-bottom: 25px;
+}
+
+.footer p {
+    margin-bottom: 15px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons svg {
+    width: 24px;
+    height: 24px;
+}
+
+
+
+/* Media query */
+
+@media (max-width: 768px) {
+
+    /* Global */
+
+    body {
+		font-size: 14px;
+	}
+
+
+    /* Header */
+    
+	.header {
+        padding: 20px 0;
+    }
+
+    .header img,
+    .header_list {
+        font-size: 18px;
+    }
+
+
+    /* Hero - Section 1 */
+
+    .hero {
+        padding: 50px 0;
+        display: block;
+    }
+
+    h1 {
+        font-size: 48px;
+        line-height: 54px;
+        margin: 24px 0;
+    }
+
+    .flex_hero {
+        display: block;
+    }
+
+    .hero img {
+        padding-top: 40px;
+    }
+
+    .btn:first-child {
+        margin: 0px 20px 20px 0px;
+    }
+
+    .btn:last-child {
+        margin: 0;
+    }
+
+
+     /* Features - Section 3 */
+
+     .flex_features {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 48px;
+    }
+
+
+    /* How we are working - Section 4 */
+
+    .working {
+        display: block;
+    }
+
+    .flex_working {
+        display: block;
+        align-items: center;
+    }
+
+    .working img {
+        padding-bottom: 40px;
+        width: 100%;
+        height: 500px;
+    }
+
+    /* Our Works - Section 4 */
+
+    .cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .card img {
+        width: 100%;
+        height: 400px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    /* Header */
+
+    .header_list {
+        display: none;
+    }
+
+	.header_burger {
+        display: block;
+        width: 40px;
+        height: 30px;
+        position: relative;
+        cursor: pointer;
+    }
+
+    .header_burger::before,
+	.header_burger::after,
+	.header_burger span {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		height: 4px;
+		background: #000;
+	}
+
+    .header_burger span {
+		top: 50%;
+		transform: translateY(-50%);
+	}
+
+	.header-burger::after {
+		top: auto;
+		bottom: 0;
+	}
+}
+
+
+
+
+
+
+
